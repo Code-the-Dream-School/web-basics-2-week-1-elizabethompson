@@ -1,0 +1,372 @@
+<h1>Web Basics 2: Week 1 Assignment Example</h1>
+
+<section id="wb2-w1-challenge1">
+  <h2>Challenge 1: Create a variable and print the value</h2>
+
+  <p>Create a variable and assign it any value:</p>
+  <pre><code class="language-javascript">const hello = 'hello world'</code></pre>
+
+  <p>Use <code>console.log</code> to print out your variable:</p>
+  <pre><code class="language-javascript">console.log(hello)</code></pre>
+
+  <h3>Final code:</h3>
+  <pre><code class="language-javascript">const hello = 'hello world'
+
+console.log(hello)</code></pre>
+
+  <h3>Output:</h3>
+  <pre><code class="language-javascript">'hello world'</code></pre>
+</section>
+
+<section id="wb2-w1-challenge2">
+  <h2>
+    Challenge 2: Create variables for your first and last name then print your
+    full name
+  </h2>
+
+  <p>
+    Create a variable called <code>firstName</code> and assign your first name as
+    the string value:
+  </p>
+  <pre><code class="language-javascript">const firstName = 'Elizabeth'</code></pre>
+
+  <p>
+    Create a variable called <code>lastName</code> and assign your last name as
+    the string value:
+  </p>
+  <pre><code class="language-javascript">const lastName = 'Thompson'</code></pre>
+
+  <p>Use <code>console.log</code> to print out your full name:</p>
+
+  <p>Method 1: String Concatenation</p>
+  <pre><code class="language-javascript">console.log(firstName + ' ' + lastName)</code></pre>
+  <p>OR</p>
+  <p>Method 2: Template Literals</p>
+  <pre><code class="language-javascript">console.log(`${firstName} ${lastName}`)</code></pre>
+
+  <blockquote>
+    <p>
+      Read more about
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals"
+        >Template Literals</a
+      >
+    </p>
+  </blockquote>
+
+  <h3>Final code:</h3>
+  <pre><code class="language-javascript">const firstName = 'Elizabeth'
+const lastName = 'Thompson'
+
+console.log(`${firstName} ${lastName}`)</code></pre>
+
+  <h3>Output:</h3>
+  <pre><code class="language-javascript">'Elizabeth Thompson'</code></pre>
+</section>
+
+<section id="wb2-w1-challenge3">
+  <h2>Challenge 3: Calculate the total price rounded to two decimals</h2>
+
+  <p>Create a variable called <code>price</code> and assign a float value:</p>
+  <pre><code class="language-javascript">const price = 9.98</code></pre>
+
+  <p>
+    Create a variable called <code>quantity</code> and assign an integer value:
+  </p>
+  <pre><code class="language-javascript">const quantity = 5</code></pre>
+
+  <p>
+    Create a variable called <code>total</code> and assign the value of
+    <code>price</code> multiplied by <code>quantity</code>:
+  </p>
+  <pre><code class="language-javascript">const total = price * quantity</code></pre>
+
+  <p>
+    Use <code>console.log</code> to print out the <code>total</code> (rounded to
+    the nearest two decimals):
+  </p>
+  <pre><code class="language-javascript">const totalRounded = total.toFixed(2)
+console.log(`$${totalRounded}`)</code></pre>
+
+  <blockquote>
+    <p>
+      Read more about the
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed"
+        >toFixed() method</a
+      >
+    </p>
+  </blockquote>
+
+  <h3>Final code:</h3>
+  <pre><code class="language-javascript">const price = 9.98
+const quantity = 5
+const total = price * quantity
+const totalRounded = total.toFixed(2)
+
+console.log(`$${totalRounded}`)</code></pre>
+
+  <h3>Output:</h3>
+  <pre><code class="language-javascript">'$49.90'</code></pre>
+</section>
+
+<section id="wb2-w1-challenge4">
+  <h2>Challenge 4: Declare a variable and conditionally assign it a value</h2>
+
+  <p>
+    Create a variable called <code>weather</code> and assign &quot;Rainy&quot; as
+    the string value:
+  </p>
+  <pre><code class="language-javascript">const weather = 'Rainy'</code></pre>
+
+  <blockquote>
+    <p>
+      Read more about the
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const"
+        >const statement</a
+      >
+    </p>
+  </blockquote>
+
+  <p>
+    Declare a variable called <code>message</code> and don't assign it a value:
+  </p>
+  <pre><code class="language-javascript">let message</code></pre>
+
+  <blockquote>
+    <p>
+      Read more about the
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let"
+        >let statement</a
+      >
+    </p>
+  </blockquote>
+
+  <p>
+    Create a conditional statement that checks if <code>weather</code> is equal to
+    &quot;Sunny&quot;:
+  </p>
+  <pre><code class="language-javascript">if (weather === 'Sunny') {
+
+}</code></pre>
+
+  <p>
+    If <code>weather</code> meets the condition above, then set
+    <code>message</code> equal to &quot;Yay! It's sunny outside&quot;:
+  </p>
+  <pre><code class="language-javascript">if (weather === 'Sunny') {
+  message = &quot;Yay! It's sunny outside&quot;
+}</code></pre>
+
+  <p>
+    Add an <code>else</code> clause that sets <code>message</code> equal to
+    &quot;Aww! It's not sunny outside&quot;:
+  </p>
+  <pre><code class="language-javascript">if (weather === 'Sunny') {
+  message = &quot;Yay! It's sunny outside&quot;
+} else {
+  message = &quot;Aww! It's not sunny outside&quot;
+}</code></pre>
+
+  <p>
+    Use <code>console.log</code> to print out the value of <code>message</code>:
+  </p>
+  <pre><code class="language-javascript">console.log(message)</code></pre>
+
+  <h3>Final code:</h3>
+  <pre><code class="language-javascript">const weather = 'Rainy'
+let message
+
+if (weather === 'Sunny') {
+  message = &quot;Yay! It's sunny outside&quot;
+} else {
+  message = &quot;Aww! It's not sunny outside&quot;
+}
+
+console.log(message)</code></pre>
+
+  <h3>Output:</h3>
+  <pre><code class="language-javascript">&quot;Yay! It's sunny outside&quot;</code></pre>
+</section>
+
+<section id="wb2-w1-challenge5">
+  <h2>Challenge 5: Create a function that returns any string</h2>
+
+  <p>
+    Create a function called <code>myFunction</code> using the function keyword:
+  </p>
+  <pre><code class="language-javascript">function myFunction() {
+
+}</code></pre>
+
+  <p>Add a return statement in your function which returns a random string:</p>
+  <pre><code class="language-javascript">function myFunction() {
+  return 'I called a function!'
+}</code></pre>
+
+  <p>
+    Use <code>console.log</code> to print out the output of
+    <code>myFunction()</code>:
+  </p>
+  <pre><code class="language-javascript">console.log(myFunction())</code></pre>
+
+  <h3>Final code:</h3>
+  <pre><code class="language-javascript">function myFunction() {
+  return 'I called a function!'
+}
+
+console.log(myFunction())</code></pre>
+
+  <h3>Output:</h3>
+  <pre><code class="language-javascript">'I called a function!'</code></pre>
+</section>
+
+<section id="wb2-w1-challenge6">
+  <h2>Challenge 6: Rewrite the function in Challenge #5 as an arrow function</h2>
+
+  <p>
+    Create a function called <code>myArrowFunction</code> using the arrow syntax:
+  </p>
+  <pre><code class="language-javascript">const myArrowFunction = () =&gt; {
+    
+}</code></pre>
+
+  <p>Add a return statement in your function which returns a random string:</p>
+
+  <p>Method 1: Explicit Return</p>
+  <pre><code class="language-javascript">const myArrowFunction = () =&gt; {
+  return 'I called an arrow function!'
+}</code></pre>
+  <p>OR</p>
+  <p>Method 2: Implicit Return</p>
+  <pre><code class="language-javascript">const myArrowFunction = () =&gt; 'I called an arrow function!'</code></pre>
+
+  <blockquote>
+    <p>
+      Read more about
+      <a
+        href="https://medium.com/@bunlong/arrow-functions-return-rules-in-javascript-b63ed5f25994"
+        >arrow function return rules</a
+      >
+    </p>
+  </blockquote>
+
+  <p>
+    Use <code>console.log</code> to print out the output of
+    <code>myArrowFunction()</code>:
+  </p>
+  <pre><code class="language-javascript">console.log(myArrowFunction())</code></pre>
+
+  <h3>Final code:</h3>
+  <pre><code class="language-javascript">const myArrowFunction = () =&gt; 'I called an arrow function!'
+
+console.log(myArrowFunction())</code></pre>
+
+  <h3>Output:</h3>
+  <pre><code class="language-javascript">'I called an arrow function!'</code></pre>
+</section>
+
+<section id="wb2-w1-challenge7">
+  <h2>Challenge 7: Create a function returns a string in all uppercase</h2>
+
+  <p>Create a function called <code>stringToUpper</code>:</p>
+  <pre><code class="language-javascript">const stringToUpper = () =&gt; {}</code></pre>
+
+  <p>Add a parameter called <code>str</code> in your function signature:</p>
+  <pre><code class="language-javascript">const stringToUpper = (str) =&gt; {}</code></pre>
+
+  <p>
+    Add a return statement in your function which returns the input string in all
+    uppercase letters:
+  </p>
+  <pre><code class="language-javascript">const stringToUpper = (str) =&gt; str.toUpperCase()</code></pre>
+
+  <blockquote>
+    <p>
+      Read more about the
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase"
+        >toUpperCase() method</a
+      >
+    </p>
+  </blockquote>
+
+  <p>
+    Use <code>console.log</code> to print out the output of
+    <code>stringToUpper(str)</code>:
+  </p>
+  <pre><code class="language-javascript">console.log(stringToUpper('why am i screaming'))</code></pre>
+
+  <h3>Final code:</h3>
+  <pre><code class="language-javascript">const stringToUpper = (str) =&gt; str.toUpperCase()
+
+console.log(stringToUpper('why am i screaming'))</code></pre>
+
+  <h3>Output:</h3>
+  <pre><code class="language-javascript">'WHY AM I SCREAMING'</code></pre>
+</section>
+
+<section id="wb2-w1-challenge8">
+  <h2>
+    Challenge 8: Create a function that accepts a number argument and returns
+    double its value
+  </h2>
+
+  <p>Create a function called <code>multiplyByTwo</code>:</p>
+  <pre><code class="language-javascript">function multiplyByTwo() {
+
+}</code></pre>
+
+  <p>Add a parameter called <code>number</code> in your function signature:</p>
+  <pre><code class="language-javascript">function multiplyByTwo(number) {
+
+}</code></pre>
+
+  <p>
+    Add a return statement in your function which returns
+    <code>number</code> times two:
+  </p>
+  <pre><code class="language-javascript">function multiplyByTwo(number) {
+  return number * 2
+}</code></pre>
+
+  <p>
+    Create a variable called <code>num1</code> and assign it to the result of
+    <code>multiplyByTwo(1)</code>:
+  </p>
+  <pre><code class="language-javascript">const num1 = multiplyByTwo(1)</code></pre>
+
+  <p>
+    Create a variable called <code>num2</code> and assign it to the result of
+    <code>multiplyByTwo(5)</code>:
+  </p>
+  <pre><code class="language-javascript">const num2 = multiplyByTwo(5)</code></pre>
+
+  <p>
+    Create a variable called <code>num3</code> and assign it to the result of
+    <code>multiplyByTwo(10)</code>:
+  </p>
+  <pre><code class="language-javascript">const num3 = multiplyByTwo(10)</code></pre>
+
+  <p>
+    Use <code>console.log</code> to print out the value of <code>num1</code>,
+    <code>num2</code>, and <code>num3</code>:
+  </p>
+  <pre><code class="language-javascript">console.log(num1, num2, num3)</code></pre>
+
+  <h3>Final code:</h3>
+  <pre><code class="language-javascript">function multiplyByTwo(number) {
+  return number * 2
+}
+
+const num1 = multiplyByTwo(1)
+const num2 = multiplyByTwo(5)
+const num3 = multiplyByTwo(10)
+
+console.log(num1, num2, num3)</code></pre>
+
+  <h3>Output:</h3>
+  <pre><code class="language-javascript">2, 10, 20</code></pre>
+</section>
